@@ -25,12 +25,12 @@ resource  "github_repository" "TFCloud" {
 }
 
 
-//# create a team
-//resource "github_team" "example-team" {
-//    name        = "example-team"
-//    description = "POC team created from Terraform"
-//    privacy     = "closed"
-//}
+# create a team
+resource "github_team" "example-team" {
+    name        = "example-team"
+    description = "POC team created from Terraform"
+    privacy     = "closed"
+}
 //
 //
 //# add a user
