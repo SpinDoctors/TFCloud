@@ -9,26 +9,21 @@ terraform {
   }
 }
 
-
 provider "github" {
-  token        = "6392d21a756cc124b3c2b636b20204a2d21734e6"
+  token        = "ead7dc0bf160b25d0ade826fcdc7fcd797880cce"
   organization = "Spindoctors"
 }
 
-
-
-resource  "github_repository" "TFCloud_one" {
-    name        = "TFCloud"
-    description = "First of many created from Terraform"
+resource "github_repository" "TFCloud_one" {
+  name        = "TFCloud_one"
+  description = "First of many created from Terraform"
 }
 
-
-
-resource "github_team" "Team_one" {
-    name        = "example-team"
-    description = "POC team created from Terraform"
-    privacy     = "closed"
-}
+//resource "github_team" "Team_one" {
+//  name        = "example-team"
+//  description = "POC team created from Terraform"
+//  privacy     = "closed"
+//}
 //
 //
 //# add a user
