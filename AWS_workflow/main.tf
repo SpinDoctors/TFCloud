@@ -18,9 +18,9 @@ variable "github_token" {
   type = string
 }
 
-resource "github_repository" "TFCloud_one" {
-  name        = "TFCloud_one"
-  description = "First of many created from Terraform"
+resource "github_repository" "Cloud-repo-ic" {
+  name        = "Cloud-repo-ic"
+  description = "Another repo created from terraform cloud"
 }
 
 //resource "github_team" "Team_one" {
