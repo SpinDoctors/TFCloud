@@ -1,4 +1,3 @@
-# Example configuration using a single workspace
 terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
@@ -11,22 +10,21 @@ terraform {
 }
 
 
-# setup Github provider
 provider "github" {
   token        = "6392d21a756cc124b3c2b636b20204a2d21734e6"
   organization = "Spindoctors"
 }
 
 
-# create a repository
-resource  "github_repository" "TFCloud" {
+
+resource  "github_repository" "TFCloud_one" {
     name        = "TFCloud"
     description = "First of many created from Terraform"
 }
 
 
-# create a team
-resource "github_team" "example-team" {
+
+resource "github_team" "Team_one" {
     name        = "example-team"
     description = "POC team created from Terraform"
     privacy     = "closed"
