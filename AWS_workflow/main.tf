@@ -13,7 +13,7 @@ terraform {
 
 # setup Github provider
 provider "github" {
-  token        = "b612f20f3f503baa19ec46a9dc5da639c059c49a"
+  token        = "6392d21a756cc124b3c2b636b20204a2d21734e6"
   organization = "Spindoctors"
 }
 
