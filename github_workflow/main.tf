@@ -23,9 +23,9 @@ variable "github_token" {
 //  description = "First of many created from Terraform"
 //}
 
-resource "github_team" "Team_one" {
-  name        = "example-team"
-  description = "POC team created from Terraform"
+resource "github_team" "data-science-team" {
+  name        = "data-science-team"
+  description = "Example team created from terraform cloud"
   privacy     = "closed"
 }
 //
