@@ -1,3 +1,8 @@
+provider "github" {
+  token        = var.github_token
+  organization = "Spindoctors"
+}
+
 terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
@@ -9,9 +14,8 @@ terraform {
   }
 }
 
-provider "github" {
-  token        = "ead7dc0bf160b25d0ade826fcdc7fcd797880cce"
-  organization = "Spindoctors"
+variable "github_token" {
+  type = string
 }
 
 resource "github_repository" "TFCloud_one" {
