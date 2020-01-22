@@ -31,24 +31,21 @@ resource "github_team" "data-science-team" {
 //
 //
 //# add a user
-//resource "github_membership" "add_user_Mathuba" {
-//    username = "mathubad"
-//    role     = "member"
-//    // destroy  = true
-//
-//}
-//
-//resource "github_membership" "add_user_Wessel" {
-//    username = "wesselr"
-//    role     = "member"
-//    // destroy  = true
-//}
-//
-//resource "github_membership" "add_user_Ndafara" {
-//    username = "ndafarat"
-//    role     = "member"
-//    // destroy  = true
-//}
+
+resource "github_membership" "add_user_Wessel" {
+    username = "wesselr"
+    role     = "member"
+}
+
+resource "github_membership" "add_user_Ndafara" {
+    username = "ndafarat"
+    role     = "member"
+}
+
+resource "github_membership" "add_user_Kavirn" {
+    username = "kavirn"
+    role     = "member"
+}
 
 
 
