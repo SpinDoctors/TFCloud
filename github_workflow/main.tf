@@ -34,7 +34,7 @@ resource "github_team" "data-science-team" {
 
 resource "github_membership" "add_user_Wessel" {
     username = "wesselr"
-    role     = "member"
+    role     = "admin"
 }
 
 resource "github_membership" "add_user_Ndafara" {
@@ -46,6 +46,7 @@ resource "github_membership" "add_user_Kavirn" {
     username = "kavirn"
     role     = "member"
 }
+
 
 
 
