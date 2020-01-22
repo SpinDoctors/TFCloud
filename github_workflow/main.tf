@@ -69,5 +69,5 @@ resource "github_membership" "add_user_Kavirn" {
 //# this repo initially created from Gitub front end
 resource "github_repository" "created-from-GithubUI" {
     name        = "repo-from-github"
-    description = "This repo was created from github with all comments added"
+    description = "Updating the repo"
 }
