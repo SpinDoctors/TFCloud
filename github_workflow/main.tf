@@ -71,3 +71,19 @@ resource "github_repository" "created-from-GithubUI" {
     name        = "repo-from-github"
     description = "Updating the repo"
 }
+
+resource "github_team" "Spin-admin-team" {
+    name = "Spin-admin-team"
+    description = "admin group"
+}
+
+
+resource "github_team" "Spin-dev-team" {
+    name = "Spin-dev-team"
+    description = "developer group"
+}
+
+resource "github_team" "Spin-user-team" {
+    name = "Spin-user-team"
+    description = "user group"
+}
